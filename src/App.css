@@ -1,38 +1,120 @@
-.App {
-  text-align: center;
+h1 {
+  font-family: "Roboto";
+  /* text-align: center; */
+  margin-left: 41%;
+  margin-bottom: 40px;
+  margin-top: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.timer-wrapper {
+  display: flex;
+  /* justify-content: center; */
+
+  margin:50px;
+  size:150px;
+  margin-left: 32%;
+  text-size-adjust: 200px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.timer {
+  font-family: "Montserrat";
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.text {
+  color: #aaa;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.value {
+  font-size: 40px;
+}
+
+.info {
+  max-width: 360px;
+  margin: 40px auto 0;
+  text-align: center;
+  font-size: 16px;
+}
+
+.bg {
+  background: url('https://images.unsplash.com/photo-1445127040028-b1bdb9acd16e?crop=entropy&fit=crop&fm=jpg&h=950&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=1125') center top no-repeat;
+  display: block;
+  background-size: cover;
+  /* height: px; */
+  /* width: 100%; */
+  position: relative;
+}
+
+
+input {
+  /* background: rgba(255,255,255,0.4); */
+  border: none;
+  /* position: relative; */
+  display: block;
+  outline: none;
+  /* width: 400px; */
+  height: 50p;
+  /* margin-left: 750px; */
+  /* top: 250px; */
+  /* margin: 0 auto; */
+  padding: 10px;
+  color: #333;
+  -webkit-box-shadow: 0 2px 10px 1px rgba(0,0,0,0.5);
+  box-shadow: 0 2px 10px 1px rgba(0,0,0,0.5);
+}
+::-webkit-input-placeholder { color: #666;} 
+:-moz-placeholder { color: #666; }
+::-moz-placeholder { color: #666; }
+:-ms-input-placeholder { color: #666; }
+
+
+.App {
+  font-family: sans-serif;
+  /* text-align: center; */
+ 
+}
+
+.full-bg-size-component {
+  /* background-size: auto; */
+  background-repeat: no-repeat;
+  background-position: center;
+ 
+  /* background-position: center center; */
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  height: 1000px;
+  /* width: 1000px; */
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  backgroundColor: 'lightblue';
+  background-size: cover;
+}
+
+
+@media only screen and (min-width: 640px) {
+  .full-bg-size-component {
+    background-size: 0px;
+    background-repeat: no-repeat;
+    background-position: top center;
   }
-  to {
-    transform: rotate(360deg);
+  /* .timer-wrapper{
+    margin-left: 22%;
+  } */
+ 
+}
+
+@media only screen and (min-width: 1024px) {
+  .full-bg-size-component {
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: top left;
   }
+
+}
+
+.lol{
+  margin-left: 39%;
+  /* text-align: center; */
 }
